@@ -1,0 +1,143 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Simple, working Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card card-body" id = "profile-wapper">
+                    <img id = "profile-img" src="{% static 'image/myphoto.jpg' %}" alt="My Photo" class="my-photo">
+                    <hr>
+                    <h4 class="typing-loop">Hi I'm Momin Ali Rifat</h4>
+                    <p class="goal-paragraph"><b>Welcome to my personal website where I share my projects</b></p>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card card-body match-height">
+                    <h5 class="info-heading" >My Info</h5>
+                    <p class="goal-paragraph">I am a CSE student at the University of Asia Pacific. My coding journey started in 2023, and since then, I have been passionate about improving my problem-solving and programming skills through competitive programming</p>
+
+                    <P class="goal-paragraph">Alongside coding contests, I have worked on various projects using C, C++, Java, Python, HTML, CSS, Bootstrap, Django, and SQL. These projects, including apps, games, and web applications, helped me apply my skills practically and understand full-stack development.</P>
+
+                    <P class="goal-paragraph">I enjoy learning new technologies and solving challenges, and I am eager to continue growing in both coding contests and software development.</P>
+                    <ul class="social-links">
+                        <li><span class="info-heading">Contact me:</span></li>
+                        <li>
+                            <a href="https://codeforces.com/profile/Momin_Rifat" target="_blank">
+                                <img src="data:image/png;base64,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" 
+                                    style="width:20px; height:20px; vertical-align:middle; margin-right:5px;">
+                                Codeforces
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/Mominrifat09" target="_blank">
+                                <i class="fa-brands fa-facebook" style="color:#1877F2;"></i> Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/MominRifat" target="_blank">
+                                <i class="fa-brands fa-github" style="color:#333;"></i> GitHub
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:23201009@uap-bd.edu.com" target="_blank">
+                                <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" 
+                                    style="width:24px; height:24px; vertical-align:middle; margin-right:5px;">
+                                Gmail
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-body">
+                    <h5><b>My CP Resources</b></h5>
+                    <p class="goal-paragraph">Here are some of my favorite competitive programming & Project resources:</p>
+                    <ul>
+                        <li><a href="{% static 'pdf/cpbook.pdf' %}" target="_blank">CP Book</a></li>
+                        <li><a href="{% static 'pdf/cpref.pdf' %}" target="_blank">CP Reference Book</a></li>
+                        <li><a href="{% static 'pdf/django.pdf' %}" target="_blank">DJANGO Book</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=Mz9BlmST31w&list=PLym69wpbTIIEOesltWGUsVnY9HDWbJit_&pp=iAQB" target="_blank">Data structure & Algoritm Playlist</a></li>
+                         <li><a href="https://www.youtube.com/playlist?list=PLKdU0fuY4OFfo3VgywUFoAUY7Udi3_6V6" target="_blank">Django Tuitoral Bangla</a></li>
+                    </ul>
+                    <p class="goal-paragraph">My Codeforces Solutions GitHub Link:</p>
+                    <a href="https://github.com/MominRifat/Codeforces_Problems_Solutions" target="_blank">View on GitHub</a>
+                    <p class="goal-paragraph">More Importance Pdfs and Links Share Soon..</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-body">
+                  <h5><b>My Projects</b></h5>
+                    <ol class="project-list">
+                        <li>
+                            <b>JavaFX Store Management System</b><br>
+                            <span class="description">Admin & customer dashboard, product management, sale system.</span><br>
+                            <small>Technologies: Java, JavaFX, Scene Builder</small>
+                        </li>
+                        <li>
+                            <b>Tic Tac Toe Game (JavaFX)</b><br>
+                            <span class="description">GUI-based game with game logic and controller handling.</span><br>
+                            <small>Technologies: Java, JavaFX</small>
+                        </li>
+                        <li>
+                            <b>Personal Portfolio Website</b><br>
+                            <span class="description">Built using HTML, CSS, Bootstrap & Django.</span><br>
+                            <small>Technologies: HTML, CSS, Bootstrap, Python, Django</small>
+                        </li>
+                    </ol>
+                    More Projects Coming Soon...
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card card-body">
+                <h5><b>Skills & Technologies</b></h5>
+                <ul class="skill-list" style="display:flex; flex-wrap:wrap; gap:15px; padding-left:0; list-style:none;">
+                    <!-- Programming Languages -->
+                    <li><i class="fa-solid fa-c" style="color:#A8B9CC; font-size:2rem;" title="C"></i></li>
+                    <li><i class="fa-solid fa-code" style="color:#00599C; font-size:2rem;" title="C++"></i></li>
+                    <li><i class="fa-brands fa-java" style="color:#007396; font-size:2rem;" title="Java"></i></li>
+                    <li><i class="fa-brands fa-python" style="color:#3776AB; font-size:2rem;" title="Python"></i></li>
+                    <li><i class="fa-brands fa-html5" style="color:#E34F26; font-size:2rem;" title="HTML"></i></li>
+                    <li><i class="fa-brands fa-css3-alt" style="color:#1572B6; font-size:2rem;" title="CSS"></i></li>
+                    <li><i class="fa-brands fa-bootstrap" style="color:#7952B3; font-size:2rem;" title="Bootstrap"></i></li>
+                    <li><i class="fa-brands fa-python" style="color:#3776AB; font-size:2rem;" title="Django"></i></li>
+                    <li><i class="fa-brands fa-java" style="color:#007396; font-size:2rem;" title="JavaFX"></i></li>
+                    <li><i class="fa-solid fa-window-maximize" style="color:#FF9800; font-size:2rem;" title="Scene Builder"></i></li>
+                    <li><i class="fa-solid fa-database" style="color:#4479A1; font-size:2rem;" title="MySQL"></i></li>
+                    <li><i class="fa-brands fa-git-alt" style="color:#F05032; font-size:2rem;" title="Git"></i></li>
+                    <li><i class="fa-brands fa-github" style="color:#333; font-size:2rem;" title="GitHub"></i></li>
+                    <li><i class="fa-solid fa-diagram-project" style="color:#4CAF50; font-size:2rem;" title="DSA"></i></li>
+                    <li><i class="fa-solid fa-cubes" style="color:#9C27B0; font-size:2rem;" title="OOP"></i></li>
+                </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-body">
+                    <h5><b>My Goal</b></h5>
+                    <p class="goal-paragraph">
+                        <i class="fa-solid fa-bullseye" style="color:#FF6F61; margin-right:5px;"></i>
+                        To become a full-stack developer, excel in competitive programming, and build innovative apps & projects that solve real-world problems.
+                    </p>
+                    <p class="goal-quote">"Code, Create, Conquer."</p>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+</body>
+</html>
